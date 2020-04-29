@@ -6,7 +6,13 @@
 
 ## run
 
+### vueのビルド
+at frontend.  
+``npm run build``
+
+### Flask server(develop) 
 at project dir.(same as run.py)
 ```
 FLASK_APP=run.py FLASK_DEBUG=1 flask run
 ```
+
