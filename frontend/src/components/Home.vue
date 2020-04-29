@@ -22,14 +22,14 @@ export default {
     getRandomFromBackend () {
       const path = `http://localhost:5000/api/random`
       axios.get(path)
-      .then(response => {
-        this.randomNumber = response.data.randomNumber
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
-},
+        .then(response => {
+          this.randomNumber = response.data.randomNumber
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
+  },
   created () {
     this.getRandom()
   }
